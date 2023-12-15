@@ -1,0 +1,20 @@
+/.
+/var
+/var/jb
+/var/jb/bin
+/var/jb/usr
+/var/jb/usr/bin
+/var/jb/usr/bin/bash
+/var/jb/usr/bin/bashbug
+/var/jb/usr/share
+/var/jb/usr/share/doc
+/var/jb/usr/share/doc/bash
+/var/jb/usr/share/doc/bash/AUTHORS
+/var/jb/usr/share/doc/bash/COPYING
+/var/jb/usr/share/doc/bash/NEWS.zst
+/var/jb/usr/share/doc/bash/README.zst
+/var/jb/usr/share/man
+/var/jb/usr/share/man/man1
+/var/jb/usr/share/man/man1/bash.1.zst
+/var/jb/usr/share/man/man1/bashbug.1.zst
+/var/jb/bin/bash -> /var/jb/usr/bin/bash

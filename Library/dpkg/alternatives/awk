@@ -1,0 +1,15 @@
+auto
+/var/jb/usr/bin/awk
+awk.1.zst
+/var/jb/usr/share/man/man1/awk.1.zst
+nawk
+/var/jb/usr/bin/nawk
+nawk.1.zst
+/var/jb/usr/share/man/man1/nawk.1.zst
+
+/var/jb/usr/bin/gawk
+10
+/var/jb/usr/share/man/man1/gawk.1.zst
+/var/jb/usr/bin/gawk
+/var/jb/usr/share/man/man1/gawk.1.zst
+

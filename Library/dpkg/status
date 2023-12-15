@@ -1,0 +1,4312 @@
+Package: apt
+Status: install ok installed
+Priority: required
+Section: Packaging
+Installed-Size: 4176
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: iphoneos-arm64
+Version: 2.7.1
+Replaces: apt1.8, apt1.4, libapt, libapt-pkg5.0, apt-lib, apt-key
+Provides: apt1.8 (= 1:0), apt-lib (= 1:0), libapt (= 1:0), apt-key (= 1:0)
+Depends: libiosexec1 (>= 1.3.1), libapt-pkg6.0 (= 2.7.1), libgnutls30, gpgv, dpkg (>= 1.19.0), coreutils, procursus-keyring
+Pre-Depends: dpkg (>= 1.14.25-8), system-cmds (>= 854.40.2-2)
+Conflicts: apt7 (<< 1:0), apt1.4 (<< 1:0), apt1.8, libapt-pkg5.0 (<< 1:0), libapt (<< 1:0), apt-key (<< 1:0)
+Description: commandline package manager
+ This package provides commandline tools for searching and
+ managing as well as querying information about packages
+ as a low-level access to all features of the libapt-pkg library.
+
+Package: base
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 12
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: iphoneos-arm64
+Version: 1-6
+Description: underlying system directory structure
+
+Package: bash
+Status: install ok installed
+Priority: optional
+Section: Terminal_Support
+Installed-Size: 964
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: iphoneos-arm64
+Version: 5.2.15
+Depends: libiosexec1 (>= 1.3.1), grep, libncursesw6, libreadline8 (>= 8.2), sed, debianutils (>= 4.11.2)
+Pre-Depends: dash (>= 0.5.11.3-1), libreadline8 (>= 8.2), profile.d (>= 0-5), debianutils (>= 4.11.2)
+Description: the best shell ever written by Brian Fox
+Homepage: http://www.gnu.org/software/bash/
+
+Package: ca-certificates
+Status: install ok installed
+Priority: optional
+Section: Utilities
+Installed-Size: 224
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Multi-Arch: foreign
+Version: 20230909
+Conffiles:
+ /var/jb/etc/profile.d/cacerts.bootstrap.sh cdbc571d64105b456819419d8de9ce37
+ /var/jb/etc/ssl/certs/cacert.pem 708532e1b98261c5db0dee8392191f57
+Description: Common CA certificates
+ Contains the certificate authorities shipped with Mozilla's browser to allow SSL-based applications to check for the authenticity of SSL connections.
+ .
+ Please note that Procursus can neither confirm nor deny whether the certificate authorities whose certificates are included in this package have in any way been audited for trustworthiness or RFC 3647 compliance. Full responsibility to assess them belongs to the local system administrator.
+
+Package: chariz-keyring
+Status: install ok installed
+Priority: optional
+Section: Keyrings
+Installed-Size: 4
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 2021.07.18
+Replaces: procursus-keyring (<< 2020.05.09-1)
+Conflicts: procursus-keyring (<< 2020.05.09-1)
+Description: GnuPG keys for the Chariz repository
+
+Package: com.serena.appindex
+Status: install ok installed
+Section: Applications
+Installed-Size: 1677
+Maintainer: Serena <hanzikashi@gmail.com>
+Architecture: iphoneos-arm64
+Version: 1.0
+Description: An Application to view and manage Applications.
+Author: Serena <hanzikashi@gmail.com>
+Name: AppIndex
+Icon: https://img.chariz.cloud/icon/appindex/icon@3x.png
+Depiction: https://chariz.com/get/appindex
+Tag: compatible_min::ios13.0
+
+Package: coreutils
+Status: install ok installed
+Priority: standard
+Section: Utilities
+Installed-Size: 24648
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: iphoneos-arm64
+Version: 9.4
+Replaces: netatalk (<= 2.0.3-6), coreutils-bin, shell-cmds (<< 207.40.1), text-cmds (<< 1:0), file-cmds (<< 272.250.1-1)
+Provides: md5sum, sha1sum, coreutils-bin (= 9.4), dirname, kill, mktemp, su
+Depends: libiosexec1 (>= 1.3.1), sh, profile.d, libssl3, libintl8 (>= 0.20.0), libgmp10, libcrypt2
+Conflicts: coreutils-bin (<< 1:0), shell-cmds (<< 207.40.1), text-cmds (<< 1:0), file-cmds (<< 272.250.1-1), system-cmds (<< 854.40.2-3)
+Conffiles:
+ /var/jb/etc/profile.d/coreutils.sh 10ddfa8817dbc0c5e61735c26b314cf0
+Description: GNU core utilities
+ This package contains the basic file, shell and text manipulation
+ utilities which are expected to exist on every operating system.
+ .
+ Specifically, this package includes: 
+ arch base64 basename cat chcon chgrp chmod chown chroot cksum comm cp
+ csplit cut date dd df dir dircolors dirname du echo env expand expr
+ factor false flock fmt fold groups head hostid id install join link ln
+ logname ls md5sum mkdir mkfifo mknod mktemp mv nice nl nohup nproc numfmt
+ od paste pathchk pinky pr printenv printf ptx pwd readlink realpath rm 
+ rmdir runcon sha*sum seq shred sleep sort split stat stty sum sync tac 
+ tail tee test timeout touch tr true truncate tsort tty uname unexpand 
+ uniq unlink users vdir wc who whoami yes
+Homepage: http://www.gnu.org/software/coreutils/
+
+Package: cy+cpu.arm64
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 0
+Description: virtual CPU dependency
+Tag: role::cydia
+
+Package: cy+cpu.arm64v8
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 0
+Description: virtual CPU dependency
+Tag: role::cydia
+
+Package: cy+kernel.darwin
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 21.4.0
+Description: virtual kernel dependency
+Tag: role::cydia
+
+Package: cy+lib.corefoundation
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1858.11
+Description: virtual corefoundation dependency
+Tag: role::cydia
+
+Package: cy+model.iphone
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 9.3
+Description: virtual model dependency
+Tag: role::cydia
+
+Package: cy+os.iphoneos
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 15.4.1
+Description: virtual operating system dependency
+Tag: role::cydia
+
+Package: darwintools
+Status: install ok installed
+Priority: required
+Section: Administration
+Installed-Size: 164
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: iphoneos-arm64
+Version: 1.6
+Depends: libiosexec1 (>= 1.3.1), grep, coreutils (>= 8.32-12)
+Recommends: uikittools (>= 2.0.0)
+Description: Provides sw_vers, /var/jb/usr/libexec/firmware, and /var/jb/etc/resolv.conf
+
+Package: dash
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: Terminal_Support
+Installed-Size: 188
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: iphoneos-arm64
+Version: 0.5.12
+Provides: sh
+Depends: libiosexec1 (>= 1.3.1), debianutils (>= 4.11.2), libedit0
+Pre-Depends: debianutils (>= 4.11.2)
+Description: POSIX-compliant shell
+ The Debian Almquist Shell (dash) is a POSIX-compliant shell derived
+ from ash.
+ .
+ Since it executes scripts faster than bash, and has fewer library
+ dependencies (making it more robust against software or hardware
+ failures), it is used as the default system shell on Debian systems.
+Homepage: http://gondor.apana.org.au/~herbert/dash/
+
+Package: debianutils
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: Utilities
+Installed-Size: 300
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: iphoneos-arm64
+Version: 5.7-1
+Depends: libiosexec1 (>= 1.3.1)
+Description: Miscellaneous utilities specific to Debian
+ This package provides a number of small utilities which are used
+ primarily by the installation scripts of Debian packages, although
+ you may use them directly.
+ .
+ The specific utilities included are:
+ add-shell remove-shell run-parts
+
+Package: diffutils
+Status: install ok installed
+Priority: important
+Section: Development
+Installed-Size: 1876
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: iphoneos-arm64
+Multi-Arch: foreign
+Version: 3.9
+Depends: libiosexec1 (>= 1.3.1), libintl8
+Description: compare two files for differences
+Homepage: http://www.gnu.org/software/diffutils/
+
+Package: diskdev-cmds
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 912
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: iphoneos-arm64
+Version: 697
+Depends: libiosexec1 (>= 1.3.1)
+Description: mount, quota, fsck, fstyp, fdisk, tunefs
+
+Package: dpkg
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: Packaging
+Installed-Size: 6092
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: iphoneos-arm64
+Version: 1.22.0
+Depends: libiosexec1 (>= 1.3.1), sh, coreutils, diffutils, tar, liblzma5 (>= 5.2.5), libintl8, libz-ng2, libzstd1, libmd0
+Pre-Depends: tar (>= 1.23), libintl8 (>= 0.20)
+Conffiles:
+ /var/jb/etc/alternatives/README 7be88b21f7e386c8d5a8790c2461c92b
+ /var/jb/etc/dpkg/origins/procursus 0b045bdf36d35760ed18dace40f11368
+Description: package maintainance tools from Debian
+Homepage: http://wiki.debian.org/Teams/Dpkg
+
+Package: essential
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: iphoneos-arm64
+Version: 0-5
+Depends: org.coolstar.sileo (>= 2.1) | xyz.willy.zebra (>= 1.1.19) | me.apptapp.installer (>= 5.1) | cydia | openssh-server
+Pre-Depends: bootstrap | dpkg (>= 1.19.0)
+Description: Virtual package to keep you safe from uninstalling important packages.
+
+Package: file-cmds
+Status: install ok installed
+Priority: important
+Section: Utilities
+Installed-Size: 480
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: iphoneos-arm64
+Version: 400-1
+Depends: libiosexec1 (>= 1.3.1)
+Description: chflags, compress, ipcrm, ipcs, pax
+
+Package: findutils
+Status: install ok installed
+Priority: important
+Section: Utilities
+Installed-Size: 1852
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: iphoneos-arm64
+Multi-Arch: foreign
+Version: 4.9.0
+Replaces: shell-cmds (<< 207.40.1)
+Depends: libiosexec1 (>= 1.3.1), sh, sed, shell-cmds, libintl8
+Conflicts: shell-cmds (<< 207.40.1)
+Description: indexes and searches filesystems
+Homepage: http://www.gnu.org/software/findutils/
+
+Package: firmware
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 15.4.1
+Description: almost impressive Apple frameworks
+Tag: role::cydia
+Name: OS Firmware
+
+Package: gawk
+Status: install ok installed
+Priority: important
+Section: Utilities
+Installed-Size: 3236
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: iphoneos-arm64
+Multi-Arch: foreign
+Version: 5.1.0-2
+Provides: awk
+Depends: libiosexec1 (>= 1.2.2), libintl8, libreadline8, libmpfr6, libgmp10
+Conffiles:
+ /var/jb/etc/profile.d/gawk.csh b3d9e29a36f945b2065b2f88d18dadaa
+ /var/jb/etc/profile.d/gawk.sh bfc054c0862d0fad98ca641b951c7061
+Description: GNU awk, a pattern scanning and processing language
+ `awk', a program that you can use to select particular records in a
+ file and perform operations upon them.
+ .
+ Gawk is the GNU Project's implementation of the AWK programming language.
+ It conforms to the definition of the language in the POSIX 1003.2 Command
+ Language And Utilities Standard. This version in turn is based on the
+ description in The AWK Programming Language, by Aho, Kernighan, and
+ Weinberger, with the additional features defined in the System V Release
+ 4 version of UNIX awk. Gawk also provides more recent Bell Labs awk
+ extensions, and some GNU-specific extensions.
+Homepage: http://www.gnu.org/software/gawk/
+
+Package: gpgv
+Status: install ok installed
+Priority: standard
+Section: Security
+Installed-Size: 492
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: iphoneos-arm64
+Version: 2.4.3
+Replaces: gnupg2
+Depends: libiosexec1 (>= 1.3.1), libassuan0, libgcrypt20, libgpg-error0, libintl8, libnpth0
+Conflicts: gnupg2, gnupg (<< 2.4.3)
+Description: GNU privacy guard - signature verification tool
+ GnuPG is GNU's tool for secure communication and data storage.
+ .
+ gpgv is actually a stripped-down version of gpg which is only able
+ to check signatures. It is somewhat smaller than the fully-blown gpg
+ and uses a different (and simpler) way to check that the public keys
+ used to make the signature are valid. There are no configuration
+ files and only a few options are implemented.
+
+Package: grep
+Status: install ok installed
+Priority: important
+Section: Utilities
+Installed-Size: 1124
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: iphoneos-arm64
+Multi-Arch: foreign
+Version: 3.11
+Replaces: text-cmds (<< 1:0)
+Depends: libiosexec1 (>= 1.3.1), libpcre2-8-0
+Conflicts: text-cmds (<< 1:0)
+Description: searches files for regular expressions
+Homepage: http://www.gnu.org/software/grep/
+
+Package: gsc.3-gvenice
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.64-bit
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.720p
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.a-w-d-l-capability
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.accelerometer
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.accessibility
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.activation-protocol
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 2
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.additional-text-tones
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.air-drop-capability
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.airplay-mirroring
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.all-features
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.allow-you-tube
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.allow-you-tube-plugin
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.allow32-bit-apps
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.ambient-light-sensor
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.any-telephony
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.app-capacity-t-v-o-s
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 17179869184
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.app-store
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.application-installation
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.arkit
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.arm64
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.armv6
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.armv7
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.armv7s
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.assistant
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.audio-playback-capability
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.auto-focus-camera
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.backlight-capability
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.baseband-class
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 3
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.blue-light-reduction-supported
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.bluetooth
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.bluetooth-le
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.board-id
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 12
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.c-p-u-sub-type
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.c-p-u-type
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 16777228
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.camera-flash
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.camera-front-flash
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.camera-live-effects-capability
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.camera-max-burst-length
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 999
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.cellular-data
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.cellular-telephony-capability
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.chip-i-d
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 32784
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.cloud-photo-library-capability
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.coastline-glow-rendering-capability
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.compass-type
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.contains-cellular-radio
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.continuity-capability
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.core-routine-capability
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.device-class-number
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.device-color
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.device-cover-glass-color
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.device-enclosure-color
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.device-housing-color
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.device-launch-time-limit-scale
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.device-prefers-building-strokes
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.device-prefers-procedural-anti-aliasing
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.device-prefers-traffic-alpha
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.device-prefers3-d-building-strokes
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.device-scene-update-time-limit-scale
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.device-supports-a-o-p
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.device-supports-a-s-t-c
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.device-supports-adaptive-maps-u-i
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.device-supports-always-listening
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.device-supports-always-on-compass
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.device-supports-c-c-k
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.device-supports-camera-haptics
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.device-supports-car-integration
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.device-supports-closed-loop-haptics
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.device-supports-crude-prox
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.device-supports-do-not-disturb-while-driving
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.device-supports-enhanced-a-c3
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.device-supports-haptics
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.device-supports-heart-rate-variability
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.device-supports-hi-res-buildings
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.device-supports-liquid-detection_-corrosion-mitigation
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.device-supports-maps-blurred-u-i
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.device-supports-navigation
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.device-supports-periodic-a-l-s-updates
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.device-supports-r-g-b10
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.device-supports-si-d-p
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.device-supports-simplistic-road-mesh
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.device-supports-tethering
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.device-supports-webkit
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.device-supports-y-cb-cr10
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.device-supports1080p
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.device-supports3-d-imagery
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.device-supports3-d-maps
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.device-supports4k
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.device-supports720p
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.device-supports9-pin
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.dictation
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.display-mirroring
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.displayport
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.encode-aac
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.encrypted-data-partition
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.external-charge-capability
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.f-d-r-sealing-status
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.f-m-f-allowed
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.face-time-back-camera-temporal-noise-reduction-mode
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 10
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.face-time-camera-supports-hardware-face-detection
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.face-time-front-camera-temporal-noise-reduction-mode
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 10
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.fcc-logos-via-software
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.first-party-launch-time-limit-scale
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.forward-camera-capability
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.front-facing-camera
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.front-facing-camera-auto-h-d-r-capability
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.front-facing-camera-burst-capability
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.front-facing-camera-h-d-r-capability
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.front-facing-camera-h-d-r-on-capability
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.front-facing-camera-max-video-zoom-factor
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.front-facing-camera-still-duration-for-burst
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 100
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.front-facing-camera-video-capture1080p-max-f-p-s
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 30
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.front-facing-camera-video-capture720p-max-f-p-s
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 30
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.full-6
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.gamekit
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.gas-gauge-battery
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.gps
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.gyroscope
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.h-e-v-c-decoder10bit-supported
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.h-e-v-c-decoder8bit-supported
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.h-e-v-c-encoding-capability
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.h264-encoder-capability
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.hardware-keyboard
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.has-baseband
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.has-battery
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.has-extended-color-display
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.has-mesa
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.has-p-k-a
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.has-s-e-p
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.has-spring-board
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.has-thin-bezel
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.hd-video-capture
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.hdr-image-capture
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.healthkit
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.hearingaid-audio-equalization
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.hearingaid-low-energy-audio
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.hidpi
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.highest-supported-video-mode
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 2
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.home-button-type
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.homescreen-wallpaper
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.hw-encode-snapshots
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.i-a-p2-capability
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.i-d-a-m-capability
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.image4-supported
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.international-settings
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.io-surface-backed-images
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.is-pwr-opposed-vol
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.is-u-i-build
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.launch-time-limit-scale-supported
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.load-thumbnails-while-scrolling
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.location-reminders
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.location-services
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.magnetometer
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.main-screen-class
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 8
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.main-screen-height
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1334
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.main-screen-pitch
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 326
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.main-screen-scale
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 2
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.main-screen-width
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 750
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.max-h264-playback-level
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 51
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.maximum-screen-scale
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 2
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.medusa-p-i-p-capability
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.metal
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.microphone
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.microphone-count
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 4
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.mix-and-match-prevention
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.mms
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.mobile-device-minimum-version
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1351
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.multitasking
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.music-store
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.n-f-c-radio-calibration-data-present
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.navajo-fusing-state
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 5
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.nfc
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.not-green-tea
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.offline-dictation-capability
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.open-g-l-e-s-version
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 196608
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.opengles-1
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.opengles-2
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.opengles-3
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.ota-activation
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.panorama-camera-capability
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.peer-peer
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.personal-hotspot
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.phosphorus-capability
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.photo-adjustments
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.photo-capability
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.photo-sharing-capability
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.photo-stream
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.photos-post-effects-capability
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.pipelined-still-image-processing-capability
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.proximity-sensor
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.ptp-large-files
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.r-f-exposure-separation-distance
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 5
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.rear-camera-capability
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.rear-facing-camera
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.rear-facing-camera-auto-h-d-r-capability
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.rear-facing-camera-burst-capability
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.rear-facing-camera-h-d-r-capability
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.rear-facing-camera-h-d-r-on-capability
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.rear-facing-camera-h-f-r-capability
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.rear-facing-camera-h-f-r-video-capture1080p-max-f-p-s
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 120
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.rear-facing-camera-h-f-r-video-capture720p-max-f-p-s
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 240
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.rear-facing-camera-max-video-zoom-factor
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 3
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.rear-facing-camera-still-duration-for-burst
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 100
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.rear-facing-camera-video-capture-f-p-s
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 60
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.rear-facing-camera-video-capture1080p-max-f-p-s
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 60
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.rear-facing-camera-video-capture4k-max-f-p-s
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 30
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.rear-facing-camera-video-capture720p-max-f-p-s
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 60
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.rear-facing-camera60fps-video-capture-capability
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.regional-behavior-valid
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.render-wide-gamut-images-at-display-time
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.ringer-switch
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.screen-recorder-capability
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.secure-element
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.shoebox
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.signing-fuse
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.siri-gesture
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.siri-offline-capability
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.sms
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.sphere-capability
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.stand-alone-contacts
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.stark-capability
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.still-camera
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.supports-force-touch
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.supports-iris-capture
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.supports-low-power-mode
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.supports-rotate-to-wake
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.supports-s-o-s
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.supports-s-s-h-b-button-type
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.telephony
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.touch-id
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.tv-out-crossfade
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.u-i-background-quality
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 100
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.u-i-parallax-capability
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.u-i-procedural-wallpaper-capability
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.u-i-reachability
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.unified-ipod
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.venice
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.vibrator-capability
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.video-camera
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.video-stills
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.voice-control
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.voip
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.volume-buttons
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.w-a-graphic-quality
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 100
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.w-l-a-n-bkg-scan-cache
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.wi-fi
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.wifi
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 1
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gsc.wifi-chipset
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 0
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 4355
+Description: virtual GraphicsServices dependency
+Tag: role::cydia
+
+Package: gzip
+Status: install ok installed
+Priority: standard
+Section: Archiving
+Installed-Size: 324
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: iphoneos-arm64
+Multi-Arch: foreign
+Version: 1.13
+Depends: libiosexec1 (>= 1.3.1)
+Description: GNU compression utilities
+ This package provides the standard GNU file compression utilities, which
+ are also the default compression tools for Debian.  They typically operate
+ on files with names ending in '.gz', but can also decompress files ending
+ in '.Z' created with 'compress'.
+Homepage: http://www.gzip.org/
+
+Package: havoc-keyring
+Status: install ok installed
+Priority: optional
+Section: Keyrings
+Installed-Size: 4
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 2022.06.03
+Description: GnuPG keys for the Havoc repository
+
+Package: launchctl
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 112
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: iphoneos-arm64
+Version: 1:1.1.1
+Depends: libiosexec1 (>= 1.3.1)
+Description: Tells launchd what to do
+Homepage: https://github.com/ProcursusTeam/launchctl
+
+Package: ldid
+Status: install ok installed
+Priority: optional
+Section: Development
+Installed-Size: 220
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: iphoneos-arm64
+Version: 2.1.5-procursus7
+Depends: libiosexec1 (>= 1.2.2), libssl3, libplist3 (>= 2.2.0)
+Description: pseudo-codesign Mach-O files
+Author: Jay Freeman (saurik) <saurik@saurik.com>
+
+Package: libapt-pkg6.0
+Status: install ok installed
+Priority: required
+Section: Libraries
+Installed-Size: 2912
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: iphoneos-arm64
+Version: 2.7.1
+Replaces: apt1.8, apt1.4, libapt, libapt-pkg5.0, apt-lib, apt-key, apt (<< 2.1.10-2)
+Provides: libapt-pkg (= 2.7.1)
+Depends: libiosexec1 (>= 1.3.1), libgcrypt20, liblz4-1, liblzma5 (>= 5.2.5), libxxhash0, libzstd1
+Conflicts: apt7 (<< 1:0), apt1.4 (<< 1:0), apt1.8 (<< 1:0), libapt-pkg5.0 (<< 1:0), libapt (<< 1:0), apt-key (<< 1:0), apt (<< 2.1.10-2)
+Description: commandline package manager
+ This package provides commandline tools for searching and
+ managing as well as querying information about packages
+ as a low-level access to all features of the libapt-pkg library.
+
+Package: libassuan0
+Status: install ok installed
+Priority: optional
+Section: Libraries
+Installed-Size: 172
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: iphoneos-arm64
+Version: 2.5.6
+Depends: libiosexec1 (>= 1.3.1), libgpg-error0
+Description: IPC library for the GnuPG components
+ Libassuan is a small library implementing the so-called "Assuan
+ protocol". This protocol is used for IPC between most newer GnuPG
+ components. Both server and client side functions are provided.
+
+Package: libbrotli1
+Status: install ok installed
+Priority: optional
+Section: Development
+Installed-Size: 988
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: iphoneos-arm64
+Version: 1.1.0
+Depends: libiosexec1 (>= 1.3.1)
+Description: Shared libraries for the Brotli compression format
+Homepage: https://www.brotli.org/
+
+Package: libcrypt2
+Status: install ok installed
+Priority: optional
+Section: Libraries
+Installed-Size: 252
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: iphoneos-arm64
+Version: 4.4.36
+Depends: libiosexec1 (>= 1.3.1)
+Description: libcrypt shared library
+ libxcrypt is a modern library for one-way hashing of passwords.
+ It supports DES, MD5, NTHASH, SUNMD5, SHA-2-256, SHA-2-512, and
+ bcrypt-based password hashes
+ It provides the traditional Unix 'crypt' and 'crypt_r' interfaces,
+ as well as a set of extended interfaces like 'crypt_gensalt'.
+
+Package: libdimentio0
+Status: install ok installed
+Priority: optional
+Section: Libraries
+Installed-Size: 84
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: iphoneos-arm64
+Version: 1:0~20230202.7ffffff
+Replaces: com.michael.dimentio, com.kasiimh1.dimentio, com.0x7ff.dimentio
+Depends: libiosexec1 (>= 1.3.1), firmware (<< 14.0) | libkernrw0 | libkrw0
+Conflicts: com.michael.dimentio, com.kasiimh1.dimentio, com.0x7ff.dimentio
+Description: PoC tool for setting nonce without triggering KPP/KTRR/PAC. (Runtime libraries)
+Author: 0x7ff
+
+Package: libedit0
+Status: install ok installed
+Priority: optional
+Section: Libraries
+Installed-Size: 216
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: iphoneos-arm64
+Version: 3.1-20230828
+Depends: libiosexec1 (>= 1.3.1), libncursesw6 (>= 6.0)
+Description: BSD editline and history libraries
+ Command line editor library provides generic line editing,
+ history, and tokenization functions.
+ .
+ It slightly resembles GNU readline.
+
+Package: libffi8
+Status: install ok installed
+Priority: optional
+Section: Libraries
+Installed-Size: 108
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: iphoneos-arm64
+Multi-Arch: foreign
+Version: 3.4.4
+Depends: libiosexec1 (>= 1.3.1)
+Description: Foreign Function Interface library runtime
+ A foreign function interface is the popular name for the interface that
+ allows code written in one language to call code written in another
+ language.
+
+Package: libgcrypt20
+Status: install ok installed
+Priority: optional
+Section: Libraries
+Installed-Size: 836
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: iphoneos-arm64
+Multi-Arch: foreign
+Version: 1.10.2
+Replaces: gcrypt, libgcrypt
+Provides: gcrypt (= 1.10.2), libgcrypt (= 1.10.2)
+Depends: libiosexec1 (>= 1.3.1), libgpg-error0 (>= 1.37)
+Conflicts: gcrypt (<< 1:0), libgcrypt (<< 1:0)
+Description: LGPL cryptographic algorithm library (Libraries)
+
+Package: libgmp10
+Status: install ok installed
+Priority: optional
+Section: Libraries
+Installed-Size: 576
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: iphoneos-arm64
+Version: 6.3.0
+Depends: libiosexec1 (>= 1.3.1)
+Description: Multiprecision arithmetic library
+ GNU MP is a programmer's library for arbitrary precision
+ arithmetic (ie, a bignum package).  It can operate on signed
+ integer, rational, and floating point numeric types.
+ .
+ It has a rich set of functions, and the functions have a regular
+ interface.
+Homepage: https://gmplib.org/
+
+Package: libgnutls30
+Status: install ok installed
+Priority: optional
+Section: Libraries
+Installed-Size: 1888
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: iphoneos-arm64
+Version: 3.8.1
+Replaces: gnutls (<< 1:0)
+Provides: gnutls (= 1:0)
+Depends: libiosexec1 (>= 1.3.1), libintl8 (>= 0.20.0), libgmp10, libidn2-0, libunistring5, libnettle8, libhogweed6, libp11-kit0, libtasn1-6, libzstd1, libbrotli1
+Conflicts: gnutls (<< 1:0)
+Description: GNU TLS library - main runtime library
+ GnuTLS is a portable library which implements the Transport Layer
+ Security (TLS 1.0, 1.1, 1.2, 1.3) and Datagram
+ Transport Layer Security (DTLS 1.0, 1.2) protocols.
+ .
+ GnuTLS features support for:
+  - certificate path validation, as well as DANE and trust on first use.
+  - the Online Certificate Status Protocol (OCSP).
+  - public key methods, including RSA and Elliptic curves, as well as password
+    and key authentication methods such as SRP and PSK protocols.
+  - all the strong encryption algorithms, including AES and Camellia.
+  - CPU-assisted cryptography with VIA padlock and AES-NI instruction sets.
+  - HSMs and cryptographic tokens, via PKCS #11.
+ .
+ This package contains the main runtime library.
+Homepage: http://www.gnu.org/software/gnutls/
+
+Package: libgpg-error0
+Status: install ok installed
+Priority: optional
+Section: Libraries
+Installed-Size: 216
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: iphoneos-arm64
+Version: 1.47
+Depends: libiosexec1 (>= 1.3.1), libintl8
+Description: GnuPG development runtime library
+ Library that defines common error values, messages, and common
+ runtime functionality for all GnuPG components.  Among these are GPG,
+ GPGSM, GPGME, GPG-Agent, libgcrypt, pinentry, SmartCard Daemon and
+ possibly more in the future.
+ .
+ It will likely be renamed "gpgrt" in the future.
+
+Package: libhogweed6
+Status: install ok installed
+Priority: optional
+Section: Libraries
+Installed-Size: 320
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: iphoneos-arm64
+Version: 3.9.1
+Depends: libiosexec1 (>= 1.3.1), libgmp10, libnettle8 (= 3.9.1)
+Description: low level cryptographic library (public-key cryptos)
+Homepage: http://www.lysator.liu.se/~nisse/nettle/
+
+Package: libidn2-0
+Status: install ok installed
+Priority: optional
+Section: Libraries
+Installed-Size: 396
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: iphoneos-arm64
+Multi-Arch: foreign
+Version: 2.3.4
+Replaces: libidn2 (<< 2.3.4)
+Provides: libidn2 (= 2.3.4)
+Depends: libiosexec1 (>= 1.2.2), libintl8, libunistring5
+Conflicts: libidn2 (<< 2.3.4)
+Description: Internationalized domain names (IDNA2008/TR46) library
+Homepage: https://www.gnu.org/software/libidn/#libidn2
+
+Package: libintl8
+Status: install ok installed
+Section: System
+Installed-Size: 208
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: iphoneos-arm64
+Version: 0.22
+Depends: libiosexec1 (>= 1.3.1)
+Description: internationalization helper for strings
+Essental: yes
+Homepage: http://www.gnu.org/software/gettext/
+
+Package: libiosexec1
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: Libraries
+Installed-Size: 76
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: iphoneos-arm64
+Version: 1.3.1
+Depends: libiosexec1 (>= 1.3.1)
+Description: shim for execve w/ shell script support
+Homepage: http://github.com/ProcursusTeam/libiosexec
+
+Package: libkrw0
+Status: install ok installed
+Priority: standard
+Section: Libraries
+Installed-Size: 56
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: iphoneos-arm64
+Version: 1.1.1
+Provides: libkrw (= 1.1.1)
+Depends: libiosexec1 (>= 1.3.1), libkrw0-plugin
+Description: A kernel R/W API for jailbreaks (Shared Library)
+Author: Siguza
+Homepage: https://github.com/Siguza/libkrw
+
+Package: libkrw0-tfp0
+Status: install ok installed
+Priority: standard
+Section: Libraries
+Installed-Size: 56
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: iphoneos-arm64
+Version: 1.1.1
+Provides: libkrw0-plugin
+Depends: libiosexec1 (>= 1.3.1), libkrw0
+Description: Plugin for libkrw that interfaces with tfp0 (Shared Library)
+Author: Siguza
+Homepage: https://github.com/Siguza/libkrw
+
+Package: liblz4-1
+Status: install ok installed
+Priority: important
+Section: Libraries
+Installed-Size: 164
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: iphoneos-arm64
+Version: 1.9.4
+Depends: libiosexec1 (>= 1.3.1)
+Conflicts: lz4 (<< 1.9.4)
+Description: Fast LZ compression algorithm library - runtime
+Homepage: http://tukaani.org/lzma/
+
+Package: liblzma5
+Status: install ok installed
+Priority: standard
+Section: Libraries
+Installed-Size: 232
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: iphoneos-arm64
+Version: 5.4.4
+Replaces: xz, lzma
+Depends: libiosexec1 (>= 1.3.1)
+Conflicts: xz (<< 1:0), lzma (<< 3:0)
+Description: XZ-format compression library
+ XZ is the successor to the Lempel-Ziv/Markov-chain Algorithm
+ compression format, which provides memory-hungry but powerful
+ compression (often better than bzip2) and fast, easy decompression.
+ .
+ The native format of liblzma is XZ; it also supports raw (headerless)
+ streams and the older LZMA format used by lzma. (For 7-Zip's related
+ format, use the p7zip package instead.)
+Homepage: https://tukaani.org/xz/
+
+Package: libmd0
+Status: install ok installed
+Priority: optional
+Section: Libraries
+Installed-Size: 100
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: iphoneos-arm64
+Version: 1.1.0
+Depends: libiosexec1 (>= 1.3.1)
+Description: message digest functions from BSD systems - shared library
+ The libmd library provides various message digest ("hash") functions,
+ as found on various BSDs on a library with the same name and with a
+ compatible API.
+
+Package: libmpfr6
+Status: install ok installed
+Priority: optional
+Section: Libraries
+Installed-Size: 496
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: iphoneos-arm64
+Version: 4.1.0
+Depends: libiosexec1 (>= 1.2.2), libgmp10
+Description: multiple precision floating-point computation
+ MPFR provides a library for multiple-precision floating-point computation
+ with correct rounding.  The computation is both efficient and has a
+ well-defined semantics. It copies the good ideas from the
+ ANSI/IEEE-754 standard for double-precision floating-point arithmetic
+ (53-bit mantissa).
+Homepage: https://www.mpfr.org
+
+Package: libncursesw6
+Status: install ok installed
+Priority: required
+Section: Libraries
+Installed-Size: 776
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: iphoneos-arm64
+Version: 6.4
+Replaces: ncurses (<< 6.4)
+Provides: ncurses (= 6.4)
+Depends: libiosexec1 (>= 1.3.1), ncurses-term (= 6.4)
+Conflicts: ncurses (<< 6.4)
+Description: shared libraries for terminal handling (wide character support)
+
+Package: libnettle8
+Status: install ok installed
+Priority: optional
+Section: Libraries
+Installed-Size: 348
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: iphoneos-arm64
+Version: 3.9.1
+Depends: libiosexec1 (>= 1.3.1)
+Description: low level cryptographic library (symmetric and one-way cryptos)
+Homepage: http://www.lysator.liu.se/~nisse/nettle/
+
+Package: libnpth0
+Status: install ok installed
+Priority: optional
+Section: Libraries
+Installed-Size: 68
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: iphoneos-arm64
+Multi-Arch: foreign
+Version: 1.6-2
+Replaces: npth (<< 1.6-2)
+Provides: npth (= 1.6-2)
+Depends: libiosexec1 (>= 1.3.1)
+Conflicts: gnupth, npth (<< 1.6-2)
+Description: replacement for GNU Pth using system threads
+
+Package: libp11-kit0
+Status: install ok installed
+Priority: standard
+Section: Libraries
+Installed-Size: 1140
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: iphoneos-arm64
+Multi-Arch: foreign
+Version: 0.25.0
+Replaces: p11-kit (<< 0.25.0)
+Depends: libiosexec1 (>= 1.3.1), libintl8, libffi8, ca-certificates
+Conflicts: p11-kit (<< 0.25.0)
+Conffiles:
+ /var/jb/etc/pkcs11/pkcs11.conf.example 063eff133cf32c1ff6204bfd2cda7941
+Description: library for loading and coordinating access to PKCS#11 modules - runtime
+ The p11-kit library provides a way to load and enumerate Public-Key
+ Cryptography Standard #11 modules, along with a standard configuration
+ setup for installing PKCS#11 modules so that they're discoverable. It
+ also solves problems with coordinating the use of PKCS#11 by different
+ components or libraries living in the same process.
+ .
+ This package contains the shared library required for applications loading
+ and accessing PKCS#11 modules.
+Homepage: https://p11-glue.github.io/p11-glue/p11-kit.html
+
+Package: libpam-modules
+Status: install ok installed
+Section: Administration
+Installed-Size: 616
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: iphoneos-arm64
+Version: 1000.0
+Depends: libiosexec1 (>= 1.3.1), libpam2
+Description: Pluggable Authentication Modules for PAM
+ This package completes the set of modules for PAM. It includes the
+  pam_unix.so module as well as some specialty modules.
+
+Package: libpam2
+Status: install ok installed
+Section: Administration
+Installed-Size: 104
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: iphoneos-arm64
+Version: 20230627
+Depends: libiosexec1 (>= 1.3.1), libpam-modules
+Conffiles:
+ /var/jb/etc/pam.d/other a38cf044fa57c5adaca32b34a3a5c079
+Description: Pluggable Authentication Modules library
+ Contains the shared library for OpenPAM, a library that enables the
+ local system administrator to choose how applications authenticate users.
+ In other words, without rewriting or recompiling a PAM-aware application,
+ it is possible to switch between the authentication mechanism(s) it uses.
+ One may entirely upgrade the local authentication system without touching
+ the applications themselves.
+
+Package: libpcre1
+Status: install ok installed
+Priority: standard
+Section: Libraries
+Installed-Size: 460
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: iphoneos-arm64
+Multi-Arch: foreign
+Version: 8.45-1
+Replaces: pcre, libpcre
+Provides: pcre (= 1:0), libpcre (= 8.45-1)
+Depends: libiosexec1 (>= 1.3.1)
+Conflicts: pcre (<< 1:0), libpcre (<< 1:0)
+Description: Old Perl 5 Compatible Regular Expression Library - runtime library
+ This is a library of functions to support regular expressions whose syntax 
+ and semantics are as close as possible to those of the Perl 5 language.
+ .
+ New packages should use the newer pcre2 packages, and existing
+ packages should migrate to pcre2.
+ .
+ This package contains the runtime library.
+
+Package: libpcre2-8-0
+Status: install ok installed
+Priority: standard
+Section: Libraries
+Installed-Size: 556
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: iphoneos-arm64
+Multi-Arch: foreign
+Version: 10.42
+Replaces: pcre2, libpcre2
+Provides: pcre2 (= 1:0), libpcre2 (= 10.42)
+Depends: libiosexec1 (>= 1.3.1)
+Conflicts: pcre2 (<< 1:0), libpcre2 (<< 1:0)
+Description: New Perl Compatible Regular Expression Library- 8 bit runtime files
+ This is PCRE2, the new implementation of PCRE, a library of functions
+ to support regular expressions whose syntax and semantics are as
+ close as possible to those of the Perl 5 language. New projects
+ should use this library in preference to the older library.
+ .
+ This package contains the 8 bit runtime library.
+
+Package: libplist3
+Status: install ok installed
+Priority: standard
+Section: Development
+Installed-Size: 132
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: iphoneos-arm64
+Version: 2.2.0+git20230130.4b50a5a
+Replaces: libplist
+Provides: libplist (= 99)
+Depends: libiosexec1 (>= 1.2.2)
+Conflicts: libplist
+Description: Library for handling Apple binary and XML property lists
+
+Package: libreadline8
+Status: install ok installed
+Priority: required
+Section: Libraries
+Installed-Size: 428
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: iphoneos-arm64
+Version: 8.2.0-1
+Replaces: readline (<< 8.2.0-1)
+Provides: readline (= 8.2.0-1)
+Depends: libiosexec1 (>= 1.3.1), libncursesw6
+Conflicts: readline (<< 8.2.0-1)
+Description: GNU readline and history libraries, run-time libraries
+
+Package: libssl3
+Status: install ok installed
+Priority: standard
+Section: Libraries
+Installed-Size: 4020
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: iphoneos-arm64
+Version: 3.0.10
+Depends: libiosexec1 (>= 1.3.1), ca-certificates
+Description: Secure Sockets Layer toolkit - shared libraries
+ This package is part of the OpenSSL project's implementation of the SSL
+ and TLS cryptographic protocols for secure communication over the
+ Internet.
+ .
+ It provides the libssl and libcrypto shared libraries.
+
+Package: libtasn1-6
+Status: install ok installed
+Priority: optional
+Section: Libraries
+Installed-Size: 132
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: iphoneos-arm64
+Multi-Arch: foreign
+Version: 4.19.0
+Replaces: libtasn1 (<< 1:0)
+Provides: libtasn1 (= 4.19.0)
+Depends: libiosexec1 (>= 1.3.1)
+Conflicts: libtasn1 (<< 1:0)
+Description: Manage ASN.1 structures (runtime)
+ Manage ASN1 (Abstract Syntax Notation One) structures.
+ The main features of this library are:
+   * on-line ASN1 structure management that doesn't require any C code
+     file generation.
+   * off-line ASN1 structure management with C code file generation
+     containing an array.
+   * DER (Distinguish Encoding Rules) encoding
+   * no limits for INTEGER and ENUMERATED values
+ .
+ This package contains runtime libraries.
+Homepage: https://www.gnu.org/software/libtasn1
+
+Package: libunistring5
+Status: install ok installed
+Priority: optional
+Section: Libraries
+Installed-Size: 1808
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: iphoneos-arm64
+Multi-Arch: foreign
+Version: 1.1
+Depends: libiosexec1 (>= 1.2.2)
+Description: Unicode string library for C
+Homepage: https://www.gnu.org/software/libunistring/
+
+Package: libxxhash0
+Status: install ok installed
+Section: Libraries
+Installed-Size: 56
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: iphoneos-arm64
+Version: 0.8.2
+Depends: libiosexec1 (>= 1.3.1)
+Description: shared library for xxhash
+ xxHash is an Extremely fast Hash algorithm, running at RAM speed limits.
+ It successfully completes the SMHasher test suite which evaluates collision,
+ dispersion and randomness qualities of hash functions. Code is highly portable,
+ and hashes are identical on all platforms (little / big endian).
+ .
+ This package contains the shared library.
+
+Package: libz-ng2
+Status: install ok installed
+Priority: standard
+Section: Libraries
+Installed-Size: 168
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: iphoneos-arm64
+Version: 2.1.3
+Depends: libiosexec1 (>= 1.3.1)
+Description: next gen zlib compression library - runtime
+ next generation zlib library implementing the deflate compression method
+ found in gzip and PKZIP. This package includes the shared library.
+
+Package: libzstd1
+Status: install ok installed
+Section: Libraries
+Installed-Size: 668
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: iphoneos-arm64
+Version: 1.5.5
+Depends: libiosexec1 (>= 1.2.2), liblz4-1, liblzma5 (>= 5.2.5)
+Description: fast lossless compression algorithm
+ Zstd, short for Zstandard, is a fast lossless compression algorithm, targeting
+ real-time compression scenarios at zlib-level compression ratio.
+ .
+ This package contains the shared library.
+
+Package: ncurses-bin
+Status: install ok installed
+Priority: important
+Section: Utilities
+Installed-Size: 820
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: iphoneos-arm64
+Version: 6.4
+Replaces: ncurses (<< 6.4)
+Depends: libiosexec1 (>= 1.3.1), libncursesw6 (= 6.4)
+Conflicts: ncurses (<< 6.4)
+Description: terminal-related programs and man pages
+
+Package: ncurses-term
+Status: install ok installed
+Priority: required
+Section: System
+Installed-Size: 7452
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 6.4
+Replaces: ncurses (<< 6.4)
+Depends: libncursesw6 (= 6.4)
+Conflicts: ncurses (<< 6.4)
+Description: This package contains terminfo data files to support most types of terminals.
+
+Package: neofetch
+Status: install ok installed
+Priority: optional
+Section: Utilities
+Installed-Size: 384
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: iphoneos-arm64
+Version: 7.1.0+20220216.ccd5d9f
+Replaces: com.matdev.neofetch-ios
+Depends: bash (>= 5.0), awk
+Conflicts: com.matdev.neofetch-ios
+Description: Shows System Information with Distribution Logo
+ Neoftech is a cross-platform and easy-to-use system information
+ command line script that collects your system information
+ and display it on the terminal next to an image, it could be your
+ distributions logo or any ascii art of your choice.
+Author: Dylan Araps <dylan.araps@gmail.com>
+Homepage: https://github.com/dylanaraps/neofetch
+
+Package: openssh-client
+Status: install ok installed
+Priority: important
+Section: Networking
+Installed-Size: 3500
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: iphoneos-arm64
+Version: 9.2p1
+Replaces: openssh (<< 1:0)
+Depends: libiosexec1 (>= 1.3.1), libssl3, libcrypt2, libmd0
+Conflicts: openssh (<< 1:0)
+Description: secure shell (SSH) client, for secure access to remote machines
+
+Package: openssh-server
+Status: install ok installed
+Priority: important
+Section: Networking
+Installed-Size: 1356
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: iphoneos-arm64
+Version: 9.2p1
+Replaces: openssh (<< 1:0)
+Depends: libiosexec1 (>= 1.3.1), libssl3, openssh-client (= 9.2p1), openssh-sftp-server, libcrypt2, libpam2, libmd0
+Conflicts: com.midnightchips.localhostssh, openssh (<< 1:0)
+Description: secure shell (SSH) server, for secure access from remote machines
+
+Package: openssh-sftp-server
+Status: install ok installed
+Priority: important
+Section: Networking
+Installed-Size: 136
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: iphoneos-arm64
+Version: 9.2p1
+Replaces: openssh (<< 1:0)
+Depends: libiosexec1 (>= 1.3.1), libssl3, openssh-client (= 9.2p1), libcrypt2, libmd0
+Conflicts: openssh (<< 1:0)
+Description: secure shell (SSH) sftp server module, for SFTP access from remote machines
+
+Package: org.coolstar.sileo
+Status: install ok installed
+Section: Packaging
+Maintainer: Amy While <me@anamy.gay>
+Architecture: iphoneos-arm64
+Version: 2.5
+Depends: firmware (>= 11.0), firmware (>= 12.2) | org.swift.libswift (>= 5.0), coreutils (>= 8.30-1), dpkg (>= 1.19.4-1), apt (>= 1.8.2), libzstd1
+Description: A modern APT package manager frontend
+Name: Sileo
+Author: Amy While <me@anamy.gay>
+Icon: https://getsileo.app/img/icon.png
+SileoDepiction: https://featuredpage.getsileo.app/depiction.json
+
+Package: procursus-keyring
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: Keyrings
+Installed-Size: 4
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: all
+Version: 2020.05.09-4
+Depends: chariz-keyring, havoc-keyring
+Description: GnuPG keys for the Procursus repo
+
+Package: profile.d
+Status: install ok installed
+Priority: standard
+Section: Administration
+Installed-Size: 12
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: iphoneos-arm64
+Version: 0-7
+Depends: zsh
+Pre-Depends: system-cmds (>= 805.220.1)
+Description: makes packaging for /etc/profile reasonable
+
+Package: sed
+Status: install ok installed
+Priority: important
+Section: Utilities
+Installed-Size: 256
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: iphoneos-arm64
+Multi-Arch: foreign
+Version: 4.9
+Replaces: text-cmds (<< 1:0)
+Depends: libiosexec1 (>= 1.3.1), libintl8
+Conflicts: text-cmds (<< 1:0)
+Description: edits streams of text using patterns
+Homepage: http://www.gnu.org/software/sed/
+
+Package: shell-cmds
+Status: install ok installed
+Priority: important
+Section: Administration
+Installed-Size: 1032
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: iphoneos-arm64
+Version: 278-2
+Provides: killall, which
+Depends: libiosexec1 (>= 1.3.1), libpam2
+Conflicts: coreutils (<< 8.32-9)
+Description: killall, renice, script, time, which, getopt, what, hexdump, su
+
+Package: shshd
+Status: install ok installed
+Priority: standard
+Section: Administration
+Installed-Size: 88
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: iphoneos-arm64
+Version: 1.1.1.1
+Depends: libiosexec1 (>= 1.3.1), libdimentio0 (>= 99), firmware (>= 12.2) | org.swift.libswift (>= 5.0)
+Description: SHSH blob saving daemon
+ After installing, this package will automatically save your blobs
+ to 1Conan's TSSSaver. The link to your specific blobs can be retrieved
+ by manually running `/usr/sbin/shshd` as root (sudo/su) and copying the output, or by
+ visiting "https://tsssaver.1conan.com/shsh/(your ecid in decimal form)".
+ .
+ This should be compatible with all devices using Procursus, including
+ A12+ devices, as it saves blobs with the entangled apnonce. Requires
+ you to set nonce generator before using.
+Author: Hayden Seay <me@diatr.us>
+
+Package: snaputil
+Status: install ok installed
+Section: System
+Installed-Size: 68
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: iphoneos-arm64
+Version: 12.3
+Depends: libiosexec1 (>= 1.3.1), firmware (>= 10.3)
+Description: APFS Snapshot Tool.
+Homepage: https://github.com/ahl/apfs/
+
+Package: sudo
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: Administration
+Installed-Size: 5696
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: iphoneos-arm64
+Version: 1.9.14p3
+Depends: libiosexec1 (>= 1.3.1), libintl8, libpam2
+Conffiles:
+ /var/jb/etc/pam.d/sudo 1ddefd4a7c99cee020674061c22381c8
+ /var/jb/etc/sudo.conf e273c688e32ba2d231c1a579e640cd6e
+ /var/jb/etc/sudo_logsrvd.conf 13540b6d862bd8fbfe9db800dbb65806
+ /var/jb/etc/sudoers b337e0c3cca51bec8fe77a2f149755c5
+ /var/jb/etc/sudoers.d/procursus 62b1752cae03c3529dc40fd8b4e91f9c
+ /var/jb/etc/sudoers.dist b337e0c3cca51bec8fe77a2f149755c5
+Description: temporarily assume root priviledges
+
+Package: system-cmds
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: Administration
+Installed-Size: 2852
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: iphoneos-arm64
+Version: 950-2
+Provides: login, passwd, reboot
+Depends: libiosexec1 (>= 1.3.1), file-cmds, libcrypt2, libpam2
+Recommends: vi
+Description: iostat, login, passwd, sync, sysctl, pw
+
+Package: tar
+Status: install ok installed
+Priority: required
+Section: Archiving
+Installed-Size: 2808
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: iphoneos-arm64
+Version: 1.35
+Depends: libiosexec1 (>= 1.3.1), libintl8
+Recommends: bzip2, gzip, xz-utils, zstd
+Description: tool for making tape archives
+Homepage: http://www.gnu.org/software/tar/
+
+Package: uikittools
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: Utilities
+Installed-Size: 764
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: iphoneos-arm64
+Version: 2.1.6-1
+Depends: libiosexec1 (>= 1.3.1)
+Suggests: uikittools-extra (= 2.1.6-1)
+Breaks: uikittools-extra (<< 2.1.6)
+Description: Command line access for UIKit/LaunchServices/CoreServices
+
+Package: vi
+Status: install ok installed
+Priority: standard
+Section: Text_Editors
+Installed-Size: 456
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: iphoneos-arm64
+Version: 070224
+Provides: ex
+Depends: libiosexec1 (>= 1.3.1), libncursesw6
+Description: The original ex/vi text editor
+
+Package: xz-utils
+Status: install ok installed
+Priority: standard
+Section: Archiving
+Installed-Size: 900
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: iphoneos-arm64
+Version: 5.4.4
+Replaces: xz, lzma
+Provides: xz (= 1:0), lzma (= 3:0)
+Depends: libiosexec1 (>= 1.3.1), liblzma5 (>= 5.4.4), libintl8
+Conflicts: xz (<< 1:0), lzma (<< 3:0)
+Description: XZ-format compression utilities
+ XZ is the successor to the Lempel-Ziv/Markov-chain Algorithm
+ compression format, which provides memory-hungry but powerful
+ compression (often better than bzip2) and fast, easy decompression.
+ .
+ This package provides the command line tools for working with XZ
+ compression, including xz, unxz, xzcat, xzgrep, and so on. They can
+ also handle the older LZMA format, and if invoked via appropriate
+ symlinks will emulate the behavior of the commands in the lzma
+ package.
+ .
+ The XZ format is similar to the older LZMA format but includes some
+ improvements for general use:
+ .
+  * 'file' magic for detecting XZ files;
+  * crc64 data integrity check;
+  * limited random-access reading support;
+  * improved support for multithreading (not used in xz-utils);
+  * support for flushing the encoder.
+Homepage: https://tukaani.org/xz/
+
+Package: zsh
+Essential: yes
+Status: install ok installed
+Priority: required
+Section: Terminal_Support
+Installed-Size: 12052
+Maintainer: Procursus Team <support@procurs.us>
+Architecture: iphoneos-arm64
+Version: 5.9
+Depends: libiosexec1 (>= 1.3.1), libncursesw6, libpcre1, debianutils (>= 4.11.2)
+Pre-Depends: debianutils (>= 4.11.2)
+Description: a shell with interactive features
+

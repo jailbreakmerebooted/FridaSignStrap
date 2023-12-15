@@ -1,0 +1,24 @@
+Author: ichitaso <willfeeltips@gmail.com>
+Maintainer: ichitaso <willfeeltips@gmail.com>
+Name: IconOrder
+Package: com.ichitaso.iconorder
+Pre-Depends: firmware (>= 12.0)
+Depends: mobilesubstrate
+Provides: me.nepeta.iconstate, com.chpwn.iconsupport, com.muirey03.iconsupportfix, com.ryannair05.gridiculousfix, com.ichitaso.iconanus
+Conflicts: me.nepeta.iconstate, com.chpwn.iconsupport, com.muirey03.iconsupportfix, com.ryannair05.gridiculousfix, com.ichitaso.iconanus
+Replaces: me.nepeta.iconstate, com.chpwn.iconsupport, com.muirey03.iconsupportfix, com.ryannair05.gridiculousfix, com.ichitaso.iconanus
+Section: Tweaks
+Description: Preserve custom icon layouts by Springboard Crash or reboots etc
+Homepage: https://ichitaso.com/
+dev: ichitaso
+Tag: purpose::extension, compatible_min::ios12.0, compatible_max::ios16.3.1
+Architecture: iphoneos-arm64
+Version: 1.0.2
+Installed-Size: 168
+Size: 8958
+MD5sum: f3156ef3e3b8b886e2b0789fb82109c0
+SHA256: 8256cd237ccd855589938df566eeee4e3abdbf2cdc918572365525cd2a9a3c7f
+Filename: api/download/package/64316483ad677830134c8ff1/com.ichitaso.iconorder_1.0.2_iphoneos-arm64.deb
+Depiction: https://havoc.app/depiction/iconorder
+SileoDepiction: https://havoc.app/package/iconorder/depiction.json
+

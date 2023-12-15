@@ -1,0 +1,14 @@
+e0d573c56ac1cbae84ef81d5a4427a73  var/jb/usr/bin/compress
+4705cfe14ed7f76a723085cf4cc2afea  var/jb/usr/bin/pax
+686dfd91a5fbc7ff41b4d20ee536f736  var/jb/usr/bin/ipcrm
+83f9907ea7cdc0c57787d06bdb30189b  var/jb/usr/bin/ipcs
+7d41ce12503e28aeecea9b21d475bea3  var/jb/usr/bin/shar
+290eef5ffc927d9e606781744d811ecd  var/jb/usr/bin/chflags
+63447dfb04c0080ebe5e6470bded4cce  var/jb/usr/bin/xattr
+be7850b2953d8baf19e7ff8196f7ab2b  var/jb/usr/share/man/man1/shar.1.zst
+9aa6ec6f4d444c04367f10b7489efff1  var/jb/usr/share/man/man1/ipcrm.1.zst
+2982704533c5792ec908c0f006e17ac2  var/jb/usr/share/man/man1/ipcs.1.zst
+65885125a2c00cacebd30da3f0771727  var/jb/usr/share/man/man1/xattr.1.zst
+44f8b6df7ef4bc4be3ed09946fb38e97  var/jb/usr/share/man/man1/chflags.1.zst
+ff708ba08886eaea61df08422831140a  var/jb/usr/share/man/man1/pax.1.zst
+f9012cab336de556599f636ec0a379b5  var/jb/usr/share/man/man1/compress.1.zst

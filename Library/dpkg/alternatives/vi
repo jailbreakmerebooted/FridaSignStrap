@@ -1,0 +1,9 @@
+auto
+/var/jb/usr/bin/vi
+vi.1
+/var/jb/usr/share/man/man1/vi.1
+
+/var/jb/usr/bin/ex-vi
+19
+/var/jb/usr/share/man/man1/via.1.zst
+

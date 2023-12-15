@@ -1,0 +1,6 @@
+#!/bin/sh
+set -e
+
+if [ "$1" != "upgrade" ]; then
+  update-alternatives --remove awk /var/jb/usr/bin/gawk
+fi

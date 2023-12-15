@@ -1,0 +1,19 @@
+Origin: Chariz
+Label: Chariz
+Suite: stable
+Version: 0.9
+Codename: hbang
+Architectures: iphoneos-arm iphoneos-arm64
+Components: main
+Description: Check out what’s new and download purchases from the Chariz marketplace!
+Date: Thu, 14 Sep 2023 12:30:27 +0000
+MD5Sum:
+ 488e96946e130a4a55c6b6e6f3d44f31 657273 Packages
+ 2a7e853965d13c70797a8af995f7e4b6 88646 Packages.bz2
+ 29cccf62fd4e30fd457d9f1950351d3b 79825 Packages.lzma
+ 3744cb4d8788ebdb1db14f1a73dbc16c 79876 Packages.xz
+SHA512:
+ bd51870791b07eac37eb5e8d5eb2a0f6edfd668ff25225375c18249e696574f47e9efe8262a23bbfe93d78cd8d1b4edf854565471fc748210c56dba656b87db8 657273 Packages
+ 1b2a3072832e141abfb24d2312db284d7d7799382df51af88e075e2c289271bd709d0ebaf04c9edfcc86f53bd150f16533da23b175f2a53a91b467431f35213a 88646 Packages.bz2
+ 26c0ddd6bd76ace8c70a46c114cc792698d083be7f6354ddc01c9bbb7edc6a8f9e26ec0337774ff14a3182aaba060fbe5d7bb4fc230d3085ee40e638bc94eb2a 79825 Packages.lzma
+ c02028be50061a9b000e8eadb1e122ad585d50434e91e310b7170140dd6b8fae15d5ba4574bd2d3395ac33d7e15cb77be2ca5ef1fd8999e7520fd8cfe8888c8b 79876 Packages.xz

@@ -1,0 +1,55 @@
+#!/bin/sh
+sourcesDir="/etc/apt/sources.list.d"
+
+finish() {
+	f="${1}"
+
+	# No control fd: bail out
+	[ -z "${f}" ] || [ -z "${SILEO}" ] && return
+
+	read -r fd ver <<-EOF                    
+			${SILEO}                                    
+			EOF
+
+	# Sileo control fd version < 1: bail out
+	[ "${ver}" -ge 1 ] || return
+
+	echo "finish:${f}" >&"${fd}"
+}
+
+case "$1" in
+	(configure)
+		rm -rf $sourcesDir/../preferences.d/checkra1n
+		exit 0
+		;;
+	(triggered)
+		if ! [ -s /usr/lib/libblackjack.dylib ]; then
+			if [ "$2" = "/Library/MobileSubstrate/DynamicLibraries" ]; then
+				finish restart
+				exit 0
+			fi
+		fi
+		if [ -d "/var/jb" ]; then 
+			if [ "$2" = "/Library/MobileSubstrate/DynamicLibraries" ]; then
+				finish restart
+				exit 0
+			fi
+		fi
+		if [ "$2" = "/var/jb/Library/MobileSubstrate/DynamicLibraries" ]; then
+			finish restart
+			exit 0
+		fi
+		;;
+	(abort-upgrade|abort-remove|abort-deconfigure)
+		exit 0
+		;;
+	(*)
+		echo "postinst called with unknown argument \`$1'" >&2
+		exit 0
+		;;
+esac
+
+if [ -z "${SILEO}" ]; then echo "Not running in Sileo. Trigger UICache"; fi
+if [ -z "${SILEO}" ]; then uicache -p /Applications/Sileo.app; fi
+
+exit 0

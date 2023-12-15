@@ -1,0 +1,10 @@
+Types: deb
+URIs: https://havoc.app/
+Suites: ./
+Components:
+
+Types: deb
+URIs: https://repo.chariz.com/
+Suites: ./
+Components:
+

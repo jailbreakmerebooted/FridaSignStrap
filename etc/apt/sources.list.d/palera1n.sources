@@ -1,0 +1,10 @@
+Types: deb
+URIs: https://repo.palera.in/
+Suites: ./
+Components:
+
+Types: deb
+URIs: https://ellekit.space/
+Suites: ./
+Components:
+

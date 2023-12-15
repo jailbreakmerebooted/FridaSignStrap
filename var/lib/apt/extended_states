@@ -1,0 +1,12 @@
+Package: libmpfr6
+Architecture: iphoneos-arm64
+Auto-Installed: 1
+
+Package: gawk
+Architecture: iphoneos-arm64
+Auto-Installed: 1
+
+Package: libplist3
+Architecture: iphoneos-arm64
+Auto-Installed: 1
+

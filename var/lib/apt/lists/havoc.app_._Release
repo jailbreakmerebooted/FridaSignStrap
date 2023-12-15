@@ -1,0 +1,24 @@
+Origin: Havoc
+Label: Havoc
+Suite: stable
+Version: 1.0
+Codename: asskicker
+Architectures: iphoneos-arm iphoneos-arm64
+Components: main
+Description: The Havoc Repository
+Date: Wed, 27 Sep 2023 22:32:46 +0000
+MD5Sum: 
+ c81a5898f9f15ffa53e3cdaa5abcb73a 998080 Packages
+ 6ad16c9c2968d437bdcc6d128e356f4b 184459 Packages.gz
+ 07b0df2718b1a6d0d74be1a6d31ddeef 158481 Packages.zst
+ 4c9477b15c44d63164bc0310bb0bc232 156808 Packages.lzma
+ 1bcaca21f9740aed768055abc26bb344 142083 Packages.bz2
+ 581278b162ddc18a092d64fe19acf7ce 128620 Packages.xz
+SHA256: 
+ fd3d12cfb32c576cd09f61d333dae917d4b76c914e5af0664d0cca795de2238d 998080 Packages
+ b2543504a337a1ce24e0e0f02729836c49cd171b6207a4ba9628b2b5674c5f36 184459 Packages.gz
+ f1874ec85b6c16910e7d09ea01b9b3c3c659b4ef2f911d1beade0a3f8de7bde8 158481 Packages.zst
+ 4b8aaf9e18e829ca2639b2b89066d5f530c818d8f8f6e0d640c264ab9a33141a 156808 Packages.lzma
+ ac9b27287ecc8093ccb5fd75c6dd492ab67dc843e0dfa36e5d4817fcbbd25d2c 142083 Packages.bz2
+ e4c581ab131b9a3178916bb07fab468003b56405391746e1aa74186a2a26aa12 128620 Packages.xz
+

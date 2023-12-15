@@ -1,0 +1,10 @@
+/.
+/var
+/var/jb
+/var/jb/usr
+/var/jb/usr/bin
+/var/jb/usr/bin/neofetch
+/var/jb/usr/share
+/var/jb/usr/share/man
+/var/jb/usr/share/man/man1
+/var/jb/usr/share/man/man1/neofetch.1.zst

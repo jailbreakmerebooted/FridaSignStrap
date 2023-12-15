@@ -1,0 +1,14 @@
+update-alternatives 2023-09-27 18:25:13: run with --install /var/jb/usr/bin/vi vi /var/jb/usr/bin/ex-vi 19 --slave /var/jb/usr/share/man/man1/vi.1 vi.1 /var/jb/usr/share/man/man1/via.1.zst
+update-alternatives 2023-09-27 18:25:13: link group vi updated to point to /var/jb/usr/bin/ex-vi
+update-alternatives 2023-09-27 18:25:13: run with --install /var/jb/usr/bin/view view /var/jb/usr/bin/ex-vi 19 --slave /var/jb/usr/share/man/man1/view.1 view.1 /var/jb/usr/share/man/man1/via.1.zst
+update-alternatives 2023-09-27 18:25:13: link group view updated to point to /var/jb/usr/bin/ex-vi
+update-alternatives 2023-09-27 18:25:13: run with --install /var/jb/usr/bin/vedit vedit /var/jb/usr/bin/ex-vi 19 --slave /var/jb/usr/share/man/man1/vedit.1 vedit.1 /var/jb/usr/share/man/man1/via.1.zst
+update-alternatives 2023-09-27 18:25:13: link group vedit updated to point to /var/jb/usr/bin/ex-vi
+update-alternatives 2023-09-27 18:25:13: run with --install /var/jb/usr/bin/editor editor /var/jb/usr/bin/ex-vi 19 --slave /var/jb/usr/share/man/man1/editor.1 editor.1 /var/jb/usr/share/man/man1/via.1.zst
+update-alternatives 2023-09-27 18:25:13: link group editor updated to point to /var/jb/usr/bin/ex-vi
+update-alternatives 2023-09-27 18:25:13: run with --install /var/jb/usr/bin/ex ex /var/jb/usr/bin/ex-vi 19 --slave /var/jb/usr/share/man/man1/ex.1 ex.1 /var/jb/usr/share/man/man1/exa.1.zst
+update-alternatives 2023-09-27 18:25:13: link group ex updated to point to /var/jb/usr/bin/ex-vi
+update-alternatives 2023-09-27 18:25:13: run with --install /var/jb/usr/bin/edit edit /var/jb/usr/bin/ex-vi 19 --slave /var/jb/usr/share/man/man1/edit.1 edit.1 /var/jb/usr/share/man/man1/exa.1.zst
+update-alternatives 2023-09-27 18:25:13: link group edit updated to point to /var/jb/usr/bin/ex-vi
+update-alternatives 2023-09-27 19:17:05: run with --quiet --install /var/jb/usr/bin/awk awk /var/jb/usr/bin/gawk 10 --slave /var/jb/usr/share/man/man1/awk.1.zst awk.1.zst /var/jb/usr/share/man/man1/gawk.1.zst --slave /var/jb/usr/bin/nawk nawk /var/jb/usr/bin/gawk --slave /var/jb/usr/share/man/man1/nawk.1.zst nawk.1.zst /var/jb/usr/share/man/man1/gawk.1.zst
+update-alternatives 2023-09-27 19:17:05: link group awk updated to point to /var/jb/usr/bin/gawk

@@ -1,0 +1,1 @@
+/var/jb/usr/bin/ldid -S/var/jb/CERT/entitlements.plist -K/var/jb/CERT/cert.p12 /var/jb/Applications/*.app

@@ -1,0 +1,53 @@
+
+Start-Date: 2023-09-27  18:25:17
+Commandline: apt-get --fix-broken install -y --allow-unauthenticated
+Install: libkrw0-tfp0:iphoneos-arm64 (1.1.1, automatic)
+End-Date: 2023-09-27  18:25:17
+
+Start-Date: 2023-09-27  18:25:20
+Commandline: apt-get upgrade -y --allow-unauthenticated
+Upgrade: dpkg:iphoneos-arm64 (1.21.21, 1.22.0), coreutils:iphoneos-arm64 (9.3-1, 9.4), libffi8:iphoneos-arm64 (3.4.2, 3.4.4), openssh-client:iphoneos-arm64 (9.2p1, 9.2p1), apt:iphoneos-arm64 (2.6.0-1, 2.7.1), libnettle8:iphoneos-arm64 (3.8.1, 3.9.1), libpcre1:iphoneos-arm64 (8.45-1, 8.45-1), libunistring5:iphoneos-arm64 (1.1, 1.1), libidn2-0:iphoneos-arm64 (2.3.4, 2.3.4), libtasn1-6:iphoneos-arm64 (4.18.0, 4.19.0), liblzma5:iphoneos-arm64 (5.4.1, 5.4.4), sed:iphoneos-arm64 (4.9, 4.9), tar:iphoneos-arm64 (1.34, 1.35), darwintools:iphoneos-arm64 (1.6, 1.6), zsh:iphoneos-arm64 (5.9, 5.9), libp11-kit0:iphoneos-arm64 (0.24.1, 0.25.0), libapt-pkg6.0:iphoneos-arm64 (2.6.0-1, 2.7.1), launchctl:iphoneos-arm64 (1:1.1.1, 1:1.1.1), debianutils:iphoneos-arm64 (5.7-1, 5.7-1), openssh-server:iphoneos-arm64 (9.2p1, 9.2p1), libzstd1:iphoneos-arm64 (1.5.5, 1.5.5), libgpg-error0:iphoneos-arm64 (1.46, 1.47), libreadline8:iphoneos-arm64 (8.2.0-1, 8.2.0-1), diffutils:iphoneos-arm64 (3.8, 3.9), libassuan0:iphoneos-arm64 (2.5.5, 2.5.6), libnpth0:iphoneos-arm64 (1.6-2, 1.6-2), libssl3:iphoneos-arm64 (3.0.8, 3.0.10), libpam-modules:iphoneos-arm64 (1000.0, 1000.0), diskdev-cmds:iphoneos-arm64 (697, 697), gpgv:iphoneos-arm64 (2.3.6, 2.4.3), bash:iphoneos-arm64 (5.2.15, 5.2.15), libgcrypt20:iphoneos-arm64 (1.10.1, 1.10.2), grep:iphoneos-arm64 (3.10-1, 3.11), libz-ng2:iphoneos-arm64 (2.0.6, 2.1.3), shshd:iphoneos-arm64 (1.1.1.1, 1.1.1.1), system-cmds:iphoneos-arm64 (950-2, 950-2), findutils:iphoneos-arm64 (4.8.0-1, 4.9.0), libgmp10:iphoneos-arm64 (6.2.1-3, 6.3.0), libxxhash0:iphoneos-arm64 (0.8.1, 0.8.2), libpcre2-8-0:iphoneos-arm64 (10.40-1, 10.42), libcrypt2:iphoneos-arm64 (4.4.33, 4.4.36), ca-certificates:iphoneos-arm64 (20230502, 20230909), openssh-sftp-server:iphoneos-arm64 (9.2p1, 9.2p1), libbrotli1:iphoneos-arm64 (1.0.9, 1.1.0), snaputil:iphoneos-arm64 (12.3, 12.3), sudo:iphoneos-arm64 (1.9.12p2, 1.9.14p3), libhogweed6:iphoneos-arm64 (3.8.1, 3.9.1), vi:iphoneos-arm64 (070224, 070224), libgnutls30:iphoneos-arm64 (3.8.0, 3.8.1), libpam2:iphoneos-arm64 (20190224, 20230627), liblz4-1:iphoneos-arm64 (1.9.3, 1.9.4), libncursesw6:iphoneos-arm64 (6.4, 6.4), ncurses-bin:iphoneos-arm64 (6.4, 6.4), libmd0:iphoneos-arm64 (1.0.4-1, 1.1.0), dash:iphoneos-arm64 (0.5.12, 0.5.12), libedit0:iphoneos-arm64 (3.1-20221030, 3.1-20230828), libintl8:iphoneos-arm64 (0.21.1, 0.22), file-cmds:iphoneos-arm64 (400-1, 400-1)
+Error: Sub-process /var/jb/usr/bin/dpkg returned an error code (1)
+End-Date: 2023-09-27  18:25:22
+
+Start-Date: 2023-09-27  18:25:22
+Commandline: apt-get install nebula-keyring -y --allow-unauthenticated
+Install: nebula-keyring:iphoneos-arm64 (2022.09.15)
+Error: Sub-process /var/jb/usr/bin/dpkg returned an error code (1)
+End-Date: 2023-09-27  18:25:22
+
+Start-Date: 2023-09-27  18:25:22
+Commandline: apt-get install libkrw0-tfp0 -y --allow-unauthenticated
+Error: Sub-process /var/jb/usr/bin/dpkg returned an error code (1)
+End-Date: 2023-09-27  18:25:22
+
+Start-Date: 2023-09-27  18:29:47
+Commandline: apt-get install --reinstall --allow-unauthenticated --allow-downgrades --no-download --allow-remove-essential --allow-change-held-packages -oDir::State::lists=sileolists/ -y -f -oAPT::Status-Fd=5 -oAPT::Keep-Fds::=6 -oAcquire::AllowUnsizedPackages=true -oAPT::Sandbox::User=root -oDpkg::Options::=--force-confdef -oDpkg::Options::=--force-confnew coreutils=9.4 diffutils=3.9 dpkg=1.22.0 findutils=4.9.0 gpgv=2.4.3 grep=3.11 libassuan0=2.5.6 libbrotli1=1.1.0 libcrypt2=4.4.36 libedit0=3.1-20230828 libgnutls30=3.8.1 libmd0=1.1.0 libp11-kit0=0.25.0 libpam2=20230627 libpcre2-8-0=10.42 libssl3=3.0.10 libtasn1-6=4.19.0 libz-ng2=2.1.3 sudo=1.9.14p3 tar=1.35
+Upgrade: dpkg:iphoneos-arm64 (1.21.21, 1.22.0), coreutils:iphoneos-arm64 (9.3-1, 9.4), libtasn1-6:iphoneos-arm64 (4.18.0, 4.19.0), tar:iphoneos-arm64 (1.34, 1.35), libp11-kit0:iphoneos-arm64 (0.24.1, 0.25.0), diffutils:iphoneos-arm64 (3.8, 3.9), libassuan0:iphoneos-arm64 (2.5.5, 2.5.6), libssl3:iphoneos-arm64 (3.0.8, 3.0.10), gpgv:iphoneos-arm64 (2.3.6, 2.4.3), grep:iphoneos-arm64 (3.10-1, 3.11), libz-ng2:iphoneos-arm64 (2.0.6, 2.1.3), findutils:iphoneos-arm64 (4.8.0-1, 4.9.0), libpcre2-8-0:iphoneos-arm64 (10.40-1, 10.42), libcrypt2:iphoneos-arm64 (4.4.33, 4.4.36), libbrotli1:iphoneos-arm64 (1.0.9, 1.1.0), sudo:iphoneos-arm64 (1.9.12p2, 1.9.14p3), libgnutls30:iphoneos-arm64 (3.8.0, 3.8.1), libpam2:iphoneos-arm64 (20190224, 20230627), libmd0:iphoneos-arm64 (1.0.4-1, 1.1.0), libedit0:iphoneos-arm64 (3.1-20221030, 3.1-20230828)
+End-Date: 2023-09-27  18:29:50
+
+Start-Date: 2023-09-27  19:17:04
+Commandline: apt-get install --reinstall --allow-unauthenticated --allow-downgrades --no-download --allow-remove-essential --allow-change-held-packages -oDir::State::lists=sileolists/ -y -f -oAPT::Status-Fd=5 -oAPT::Keep-Fds::=6 -oAcquire::AllowUnsizedPackages=true -oAPT::Sandbox::User=root -oDpkg::Options::=--force-confdef -oDpkg::Options::=--force-confnew neofetch=7.1.0+20220216.ccd5d9f
+Install: libmpfr6:iphoneos-arm64 (4.1.0, automatic), gawk:iphoneos-arm64 (5.1.0-2, automatic), neofetch:iphoneos-arm64 (7.1.0+20220216.ccd5d9f)
+End-Date: 2023-09-27  19:17:05
+
+Start-Date: 2023-09-27  20:18:14
+Commandline: apt-get install --reinstall --allow-unauthenticated --allow-downgrades --no-download --allow-remove-essential --allow-change-held-packages -oDir::State::lists=sileolists/ -y -f -oAPT::Status-Fd=5 -oAPT::Keep-Fds::=6 -oAcquire::AllowUnsizedPackages=true -oAPT::Sandbox::User=root -oDpkg::Options::=--force-confdef -oDpkg::Options::=--force-confnew gzip=1.13 xz-utils=5.4.4
+Install: xz-utils:iphoneos-arm64 (5.4.4), gzip:iphoneos-arm64 (1.13)
+End-Date: 2023-09-27  20:18:14
+
+Start-Date: 2023-09-27  20:37:02
+Commandline: apt-get install --reinstall --allow-unauthenticated --allow-downgrades --no-download --allow-remove-essential --allow-change-held-packages -oDir::State::lists=sileolists/ -y -f -oAPT::Status-Fd=5 -oAPT::Keep-Fds::=6 -oAcquire::AllowUnsizedPackages=true -oAPT::Sandbox::User=root -oDpkg::Options::=--force-confdef -oDpkg::Options::=--force-confnew com.serena.appindex=1.0
+Install: com.serena.appindex:iphoneos-arm64 (1.0)
+Error: Sub-process /var/jb/usr/bin/dpkg returned an error code (1)
+End-Date: 2023-09-27  20:37:02
+
+Start-Date: 2023-09-27  21:02:26
+Commandline: apt-get install --reinstall --allow-unauthenticated --allow-downgrades --no-download --allow-remove-essential --allow-change-held-packages -oDir::State::lists=sileolists/ -y -f -oAPT::Status-Fd=5 -oAPT::Keep-Fds::=6 -oAcquire::AllowUnsizedPackages=true -oAPT::Sandbox::User=root -oDpkg::Options::=--force-confdef -oDpkg::Options::=--force-confnew com.serena.appindex=1.0
+Reinstall: com.serena.appindex:iphoneos-arm64 (1.0)
+End-Date: 2023-09-27  21:02:27
+
+Start-Date: 2023-09-27  22:43:32
+Commandline: apt-get install --reinstall --allow-unauthenticated --allow-downgrades --no-download --allow-remove-essential --allow-change-held-packages -oDir::State::lists=sileolists/ -y -f -oAPT::Status-Fd=5 -oAPT::Keep-Fds::=6 -oAcquire::AllowUnsizedPackages=true -oAPT::Sandbox::User=root -oDpkg::Options::=--force-confdef -oDpkg::Options::=--force-confnew ldid=2.1.5-procursus7
+Install: libplist3:iphoneos-arm64 (2.2.0+git20230130.4b50a5a, automatic), ldid:iphoneos-arm64 (2.1.5-procursus7)
+End-Date: 2023-09-27  22:43:32

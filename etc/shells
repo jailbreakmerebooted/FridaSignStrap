@@ -1,0 +1,11 @@
+# /etc/shells: valid login shells
+/var/jb/bin/sh
+/var/jb/usr/bin/sh
+/var/jb/usr/bin/dash
+/private/preboot/7D821A35628F154B7474FB51C1E7DF68BDD875C2286D3CCC8A3BD0438ED27E7B08BC7B11CB5BF479A0090A47739B08E7/jb-a84sAZrG/procursus/usr/bin/dash
+/var/jb/bin/zsh
+/private/preboot/7D821A35628F154B7474FB51C1E7DF68BDD875C2286D3CCC8A3BD0438ED27E7B08BC7B11CB5BF479A0090A47739B08E7/jb-a84sAZrG/procursus/usr/bin/zsh
+/var/jb/usr/bin/zsh
+/var/jb/bin/bash
+/private/preboot/7D821A35628F154B7474FB51C1E7DF68BDD875C2286D3CCC8A3BD0438ED27E7B08BC7B11CB5BF479A0090A47739B08E7/jb-a84sAZrG/procursus/usr/bin/bash
+/var/jb/usr/bin/bash

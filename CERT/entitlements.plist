@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>application-identifier</key>
+    <string>247WTX8N88.com.dekotastm.fridaroot.Fr1d4Root</string>
+    <key>com.apple.developer.team-identifier</key>
+    <string>247WTX8N88</string>
+    <key>get-task-allow</key>
+    <true/>
+          <key>com.apple.private.security.no-sandbox</key>
+          <true/>
+          <key>platform-application</key>
+          <true/>
+          <key>com.apple.private.security.storage.AppDataContainers</key>
+          <true/>
+          <key>com.apple.private.persona-mgmt</key>
+          <true/>
+          <key>com.apple.security.exception.files.absolute-path.read-write</key>
+          <array>
+              <string>/</string>
+          </array>
+</dict>
+</plist>

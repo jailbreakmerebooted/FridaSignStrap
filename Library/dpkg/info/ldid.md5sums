@@ -1,0 +1,6 @@
+d6e295d6cb1306841bc55d77b163eec0  var/jb/usr/bin/ldid
+30eec52a48d1980c1f6aafb88c4c3025  var/jb/usr/share/man/zh_TW/man1/ldid.1.zst
+ed9bae9a9fab778f8344c53e6f87915e  var/jb/usr/share/man/zh_CN/man1/ldid.1.zst
+cfd71e285d92d21dd5da7c281e7541d8  var/jb/usr/share/man/man1/ldid.1.zst
+73f1eb20517c55bf9493b7dd6e480788  var/jb/usr/share/doc/ldid/COPYING
+4607aac8991e3057bea55bae48404baa  var/jb/usr/share/zsh/site-functions/_ldid
